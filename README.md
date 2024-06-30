@@ -1,35 +1,58 @@
-##BACKEND:
+## System Requirements
 
-###`composer install/update`
+- **PHP Version:** 8.1 - 8.2
 
-###`php artisan db:wipe`
+## Installation
 
-###`php artisan migrate`
+1. Clone the repository to your local machine:
 
-###`php artisan db:seed`
+   ```bash
+   git clone https://github.com/abirdas15/userAvailability.git
 
-###`php artisan passport:install --force`
+2. Navigate to the project directory:
 
-###`php artisan BM:User:Permission`
+   ```bash
+   cd userAvailability
 
-###`php artisan Generate:BusinessDirectory`
+3. Install PHP dependencies:
 
-###`php artisan config:clear`
+   ```bash
+   composer install
 
-###`php artisan cache:clear`
+4. Configure your environment variables:
 
-##OR JUST RUN
+    ```bash
+    cp .env.example .env
 
-###`php artisan init:project`
+    Update the .env file with your database and other relevant configurations.
+
+5. Generate application key:
+
+   ```bash
+    php artisan key:generate
+
+6. Project Initialization
+
+   ```bash
+    php artisan app:init-project
 
 
-#
-##FRONTEND
+7. Serve the application:
+   ```bash
+     php artisan serve
+   
+8. Unit Test
+    ```bash
+     php artisan test
+   
+9. User Login Credential
+     ```bash
+    Email: john@doe.com
+    Password: 12345678!@
 
-`npm install`
+10. Api Endpoint Documentation
+     ```bash
+    https://documenter.getpostman.com/view/9425207/2sA3duGt5C
+    
 
-`ng build --configuration development(or prod)`
-
-##PDF GENERATE
-
-`sudo apt install wkhtmltopdf`
+### ENJOY 
